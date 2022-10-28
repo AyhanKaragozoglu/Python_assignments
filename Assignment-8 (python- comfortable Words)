@@ -1,0 +1,14 @@
+sol_el = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z'}
+sağ_el = {'h','i','j','k','l','m','n','o','p','u','y','ç','ö','ü','ğ','ı','ş'}
+
+words = input("bir kelime girin: ")
+dondur = set(words)
+if dondur.intersection(sol_el)  :
+  confortable = words 
+  print(words, False, "(uses only left-hand fingers)")
+elif dondur.intersection(sağ_el) :
+    confortable = words 
+    print(words, False, "(uses only right-hand fingers)")
+else: 
+  confortable = words
+  print(confortable, True, "(uses both hand fingers)")
